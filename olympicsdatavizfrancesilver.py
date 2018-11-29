@@ -40,6 +40,8 @@ percents = [men_percentage, women_percentage]
 gender = list(gender)
 y_pos = np.arange(len(gender))
 
+plt.title('Percentage of silver won by Men vs Women of France')
+plt.ylabel('Percentage')
 plt.bar(y_pos, percents)
 plt.xticks(y_pos, gender)
 plt.show()

@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.appContainer
+{
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+}
+
+.mainHeader
+{
+	background-color: lightskyblue;
+	text-align: center;
+	height: 160px;
+}
+
+.title
+{
+	font-family: javanese text;
+}
+
+#flag
+{
+	margin-top: 15px;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.bronze
+{
+	border-top: solid 3px lightskyblue;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.silver
+{
+	border-top: solid 3px lightskyblue;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.gold
+{
+	border-top: solid 3px lightskyblue;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sports
+{
+	border-top: solid 3px lightskyblue;
+	margin-right: auto;
+	margin-left: auto;
+}

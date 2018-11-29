@@ -6,7 +6,7 @@ sex = []
 Men = 0
 Women = 0
 
-with open("C:\\Users\\acade\\Desktop\\watson_a_main_h_olympicswinterpython\\data\\winterolympicsfrancetotal.csv") as csvfile:
+with open("C:\\Users\\acade\\Desktop\\watson_a_main_h_olympicswinterpython\\data\\winterolympicsfrancegold.csv") as csvfile:
 	reader = csv.reader(csvfile, delimiter=",")
 	line_count = 0
 	for row in reader:
@@ -16,10 +16,6 @@ with open("C:\\Users\\acade\\Desktop\\watson_a_main_h_olympicswinterpython\\data
 		else:
 			# collect the ratings info
 			sex.append(row[2])
-		else:
-			sex.append(row[12])
-		else:	
-			sex.append(row[23])
 		
 		line_count +=1
 
@@ -44,6 +40,8 @@ percents = [men_percentage, women_percentage]
 gender = list(gender)
 y_pos = np.arange(len(gender))
 
+plt.title('Percentage of gold won by Men vs Women of France')
+plt.ylabel('Percentage')
 plt.bar(y_pos, percents)
 plt.xticks(y_pos, gender)
 plt.show()
